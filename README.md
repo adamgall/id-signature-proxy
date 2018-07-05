@@ -2,7 +2,7 @@ ALPHA Release
 
 # Kairos ID Signature Proxy
 
-Kairos ID Signature proxy responsible for signing Kairos responses
+Kairos ID Signature Proxy responsible for signing Kairos API responses when using the Kairos Protocol™ ([Human Identity Interface™](https://github.com/kairosinc/id-wallet/tree/master/contracts/HumanIdentity/README.md). 
 
 ## Getting Started
 
