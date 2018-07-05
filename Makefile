@@ -4,7 +4,7 @@ build:
 	docker build --no-cache -t id-signature-proxy:local .
 
 run:
-	docker run --detach --env-file=.env-ci --name=id-signature-proxy --publish="8000:8000" id-signature-proxy:local
+	docker run --detach --env-file=.env --name=id-signature-proxy --publish="8000:8000" id-signature-proxy:local
 
 logs:
 	docker logs id-signature-proxy -f
@@ -13,7 +13,7 @@ stop:
 	docker stop id-signature-proxy
 
 run-test:
-	docker run --env-file=.env-ci --name=id-signature-proxy --publish="8000:8000" id-signature-proxy:local yarn test
+	docker run --env-file=.env --name=id-signature-proxy --publish="8000:8000" id-signature-proxy:local yarn test
 
 clean:
 	docker stop id-signature-proxy
